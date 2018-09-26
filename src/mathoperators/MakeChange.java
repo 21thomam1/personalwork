@@ -6,23 +6,37 @@ public class MakeChange {
 		// TODO Auto-generated method stub
 
 		Scanner input = new Scanner(System.in);
-		double change = -999.9;
-		double makechange = -999.9;
-		double dollars = -999.9;
-		double quarters = -999.9;
-		double dimes = -999.9;
-		double nickels = -999.9;
-		double pennies = -999.9;
+		int change = -999;
+		int makechange = -999;
+		int remainder = -999;
+		int remainder2 = -999;
+		int remainder3 = -999;
+		int remainder4 = -999;
+		int dollars = -999;
+		int quarters = -999;
+		int dimes = -999;
+		int nickels = -999;
+		int pennies = -999;
 		
-		System.out.println("What should I make change for?");
-		makechange = input.nextDouble();
+		System.out.println("How many cents should I make change for?");
+		makechange = input.nextInt();
 		
-		dollars = (int)makechange;
-		quarters = makechange / 4;
+		dollars = makechange / 100;
+		remainder = makechange % 100;
+		quarters = remainder / 25;
+		remainder2 = remainder % 25;
+		dimes = remainder2 / 10;
+		remainder3 = remainder2 % 10;
+		nickels = remainder3 / 5;
+		remainder4 = remainder3 % 5;
+		pennies = remainder4;
 		
-		System.out.println("You want to break down $" + makechange);
+		System.out.println("You want to break down " + makechange + " cents.");
 		System.out.println(dollars + " dollars");
 		System.out.println(quarters + " quarters");
+		System.out.println(dimes + " dimes");
+		System.out.println(nickels + " nickels");
+		System.out.println(pennies + " pennies");
 		
 		input.close();
 	}

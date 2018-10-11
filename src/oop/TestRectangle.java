@@ -13,7 +13,7 @@ public class TestRectangle {
 	System.out.println("box length: " + box.getLength());
 	System.out.println("box width: " + box.getWidth());
 	
-	box = new Rectangle(3.0, 8.75);
+	box = new Rectangle();
 	System.out.println("box length: " + box.getLength());
 	System.out.println("box width: " + box.getWidth());
 	System.out.println("box perimeter: " + box.perimeter());

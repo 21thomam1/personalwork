@@ -14,7 +14,7 @@ public class EvenDivisors {
 		for (int divisor = integer; divisor > 0; divisor--) {
 				if (integer % divisor == 0) {
 					if (divisor % 2 == 0) {
-						sum = sum + divisor;0
+						sum = sum + divisor;
 					}
 				}
 			}

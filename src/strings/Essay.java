@@ -3,13 +3,14 @@ package strings;
 public class Essay {
 	String nameFirst;
 	String nameLast;
+	String name;
 	String text;
 	boolean x;
 	int wordCount;
 
 	public Essay() {
-		nameFirst = "Megan";
-		nameLast = "Thomas";
+		name = "Megan Thomas";
+		
 		text = "hi";
 		x = true;
 		wordCount = 0;
@@ -31,7 +32,8 @@ public class Essay {
 	}
 
 	public String getLastName() {
-		return nameLast.toUpperCase();
+		String last = name.substring(name.indexOf(" ") + 1);
+		return last.toUpperCase();
 	}
 
 	public int getFirstName() {
@@ -50,7 +52,7 @@ public class Essay {
 	
 	public int getWordCount() {
 		{
-			return text.length();
+			return wordCount;
 		}
 	}
 

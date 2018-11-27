@@ -11,7 +11,7 @@ public class RandomScores {
 		int max = 1000;
 		int largestScore = 0;
 
-		for (int counter = 0; counter < 250; counter++) {
+		for (int counter = 0; counter < scores.length; counter++) {
 			int num = min + generator.nextInt(max - min + 1);
 			scores[counter] = num;
 			if (scores[counter] > largestScore) {

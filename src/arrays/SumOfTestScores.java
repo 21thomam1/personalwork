@@ -8,7 +8,7 @@ public class SumOfTestScores {
 		int[] scores = new int[5];
 		int sum = 0;
 		Scanner input = new Scanner(System.in);
-		for (int counter = 0; counter < 5; counter++) {
+		for (int counter = 0; counter < scores.length; counter++) {
 			System.out.println("enter a score:");
 			scores[counter] = input.nextInt();
 			sum = sum + scores[counter];

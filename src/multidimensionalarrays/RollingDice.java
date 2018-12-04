@@ -41,6 +41,19 @@ public class RollingDice {
 			System.out.println();
 		}
 
+		System.out.println();
+		System.out.println("enter a value:");
+		int value = input.nextInt();
+		int times = 0;
+		
+		for (int row = 0; row < rollDice.length; row++) {
+			for (int column = 0; column < rollDice[0].length; column++) {
+				if(rollDice[column][row] == value)	{
+					times ++;
+				}
+			}
+		}
+		System.out.println("the number " + value + " was rolled " + times + " times");	
 	}
 
 }

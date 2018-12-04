@@ -16,15 +16,26 @@ public class RollingDice {
 		System.out.println("number of rolls:");
 		int rolls = input.nextInt();
 		int[][] rollDice = new int[students][rolls];
-		
+
 		for (int row = 0; row < rollDice.length; row++) {
 			for (int column = 0; column < rollDice[0].length; column++) {
 				int num = min + generator.nextInt(max - min + 1);
 				rollDice[row][column] = num;
 			}
 		}
+		System.out.println("row by row: ");
 		for (int row = 0; row < rollDice.length; row++) {
 			for (int column = 0; column < rollDice[0].length; column++) {
+				System.out.print(rollDice[row][column] + " ");
+			}
+			System.out.println();
+		}
+
+		System.out.println();
+		System.out.println("column by column: ");
+
+		for (int column = 0; column < rollDice.length; column++) {
+			for (int row = 0; row < rollDice[0].length; row++) {
 				System.out.print(rollDice[row][column] + " ");
 			}
 			System.out.println();

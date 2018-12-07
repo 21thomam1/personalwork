@@ -12,12 +12,16 @@ public class RectangleTest {
 		for (int i = 0; i < 400; i++) {
 			boxes.add(new Rectangle (50 + generator.nextInt(20), 50 + generator.nextInt(20)));
 		}
+		
+		Rectangle removed = boxes.remove(generator.nextInt(400));
 
 		for (int i = boxes.size()-1; i > 0; i--) {
 			Rectangle oneBox = boxes.get(i);
 			System.out.println(oneBox.area());
 		}
-
+		System.out.println();
+		System.out.println("area of removed rectangle: " + removed.area());
+		
 	}
 
 }

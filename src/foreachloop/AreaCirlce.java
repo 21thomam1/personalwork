@@ -14,9 +14,7 @@ public class AreaCirlce {
 		}
 		
 		for(Circle i : radii){
-			Circle oneCircle = i;
-			System.out.println(oneCircle.area());
-			
+			System.out.println(i.area());
 		}
 
 	}

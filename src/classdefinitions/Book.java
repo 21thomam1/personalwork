@@ -10,6 +10,9 @@ public class Book {
 	}
 	
 	public Book(int xPages, String xTitle)	{
+		if(xPages < 0){
+			xPages = 0;
+		}
 		pages = xPages;
 		title = xTitle;
 	}
@@ -19,6 +22,9 @@ public class Book {
 	}
 	
 	public void setPages(int xPages)	{
+		if(xPages < 0){
+			xPages = 0;
+		}
 		pages = xPages;
 	}
 	
@@ -28,6 +34,18 @@ public class Book {
 	
 	public int getPages()	{
 		return pages;
+	}
+	
+	public String toString()	{
+		return "Book object pages: " + pages + " title: " + title;
+	}
+	
+	public boolean equals(Book otherBook)	{
+		return this.toString().equals(otherBook.toString());
+	}
+	
+	public Book clone()	{
+		return new Book(pages, title);
 	}
 
 }

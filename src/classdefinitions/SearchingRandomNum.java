@@ -1,9 +1,7 @@
 package classdefinitions;
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-
 public class SearchingRandomNum {
 
 	public static void main(String[] args) {
@@ -31,6 +29,7 @@ public class SearchingRandomNum {
 		System.out.println(find + " was found " + total + " time(s)");
 		
 
+		Random generator1 = new Random();
 	}
 
 }

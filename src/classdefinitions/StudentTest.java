@@ -1,5 +1,5 @@
 package classdefinitions;
-
+import java.util.Random;
 public class StudentTest {
 
 	public static void main(String[] args) {
@@ -15,6 +15,11 @@ public class StudentTest {
 		System.out.println(bob.toString());
 		System.out.println(bob.equals(oneStudent));
 		System.out.println(bob.clone());
+		
+		Random generator = new Random();
+		int num = generator.nextInt(70);
+		System.out.println(num);
+		
 
 	}
 

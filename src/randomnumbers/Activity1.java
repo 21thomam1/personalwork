@@ -9,7 +9,6 @@ public class Activity1 {
 		int max = 1;
 		int flip = 0;
 		int heads = 0;
-		//ihuiiuhiuhihiu
 		
 		for (int counter = 1; counter <= 100000; counter ++){
 			int randomNum = min + generator.nextInt(max - min + 1);

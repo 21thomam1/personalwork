@@ -17,7 +17,7 @@ public class RectangleTest {
 		Rectangle last = boxes.remove(boxes.size()-1);
 		boxes.set(0, last);
 		
-		for (int i = boxes.size()-1; i > 0; i--) {
+		for (int i = boxes.size()-1; i >= 0; i--) {
 			Rectangle oneBox = boxes.get(i);
 			System.out.println(oneBox.area());
 		}

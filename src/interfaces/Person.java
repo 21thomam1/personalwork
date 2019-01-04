@@ -2,7 +2,7 @@ package interfaces;
 
 public interface Person {
 	String getName();
-	String setName();
+	void setName(String xName);
 	int getAge();
 	String toString();
 }

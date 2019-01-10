@@ -1,22 +1,21 @@
 package inheritance;
 
 public class Rectangle extends Quadrilateral {
-	Quadrilateral bob = new Quadrilateral();
 	public Rectangle() {
-		bob.setside1(10);
-		bob.setside2(5);
-		bob.setside3(10);
-		bob.setside4(5);
+		setside1(10);
+		setside1(5);
+		setside1(10);
+		setside1(5);
 	}
 
-	public Rectangle(double xs1, double xs2, double xs3, double xs4)	{
-		bob.setside1(xs1);
-		bob.setside2(xs2);
-		bob.setside3(xs3);
-		bob.setside4(xs4);
+	public Rectangle(double length, double width)	{
+		setside1(length);
+		setside2(width);
+		setside3(length);
+		setside4(width);
 	}
 
 	public double area()	{
-		return bob.getside1() * bob.getside2();
+		return s1 * s2;
 	}
 }
